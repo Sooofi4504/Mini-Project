@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Test.Shopclues">
+        <methods>
+          <include name="browser"/>
+          <include name="register"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- Test.Shopclues -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+  <test thread-count="5" parallel="tests" name="chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Test.Shopclues">
+        <methods>
+          <include name="browser"/>
+          <include name="register"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- Test.Shopclues -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="Test.Shopclues">
+        <methods>
+          <include name="browser"/>
+          <include name="register"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- Test.Shopclues -->
+    </classes>
+  </test> <!-- edge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
