@@ -5,7 +5,7 @@
     <classes>
       <class name="Test.Shopclues">
         <methods>
-          <include name="product"/>
+          <include name="browserclose"/>
           <include name="browser"/>
           <include name="register"/>
           <include name="search"/>
